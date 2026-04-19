@@ -99,63 +99,6 @@ Actual  Not Dup  [   518         103   ]
 
 ---
 
-## 📁 Project Structure
-
-```
-duplicate-question-classifier/
-│
-├── data/
-│   └── quora_question_pairs.csv
-│
-├── model/
-│   └── fine_tuned_bert/
-│
-├── notebooks/
-│   └── training.ipynb
-│
-├── src/
-│   ├── train.py
-│   ├── evaluate.py
-│   └── predict.py
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## ⚙️ Setup & Installation
-
-```bash
-git clone https://github.com/your-username/duplicate-question-classifier.git
-cd duplicate-question-classifier
-pip install -r requirements.txt
-```
-
-### Requirements
-
-```
-transformers
-torch
-scikit-learn
-pandas
-numpy
-```
-
----
-
-## 🏋️ Training
-
-```bash
-python src/train.py \
-  --model bert-base-uncased \
-  --epochs 3 \
-  --batch_size 16 \
-  --max_len 128
-```
-
----
-
 ## 🔍 Inference
 
 ```python
@@ -176,12 +119,6 @@ print(result)  # Output: Duplicate ✅
 - High **recall (0.918)** ensures most duplicate questions are flagged
 - The model handles paraphrasing, synonyms, and reordered structure gracefully
 - Can be deployed in real-time pipelines for platforms like Quora or Stack Overflow
-
----
-
-## 📜 License
-
-MIT License. See `LICENSE` for details.
 
 ---
 
